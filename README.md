@@ -175,7 +175,7 @@ This is a **prototype** aimed at understanding policy design. A few intentional 
    - Include latency-critical settings and streaming output.  
 
 ---
-
+## 🔬 Reproducing the Experiments
 ```bash
 # 1) clone
 git clone https://github.com/adityakamat24/verifier-guided-sd.git
