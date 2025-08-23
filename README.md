@@ -90,6 +90,8 @@ def verifier_guided_sd_step(prefix, k, policy):
             prefix = prefix + [tok]
         else:
             break
+    # 5) return accepted prefix (possibly empty)
+    return accepted
 ```
 ---
 
@@ -206,7 +208,3 @@ If it supports next-token probabilities and KV-cache, it should be straightforwa
 
 ---
 
-
-
-    # 5) return accepted prefix (possibly empty)
-    return accepted
