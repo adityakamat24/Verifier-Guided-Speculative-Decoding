@@ -95,7 +95,7 @@ def verifier_guided_sd_step(prefix, k, policy):
 ```
 ---
 
-## 🔧 Implementation Details
+## Implementation Details
 
 Implementation details live in the notebook:
 
@@ -106,7 +106,7 @@ Implementation details live in the notebook:
 
 ---
 
-## 📊 Evaluation and Metrics
+## Evaluation and Metrics
 
 Benchmarks are reproducible from:
 - `benchmark_analysis.csv` — raw results  
@@ -126,7 +126,7 @@ I focus on **how policies change acceptance and scheduling**, not on declaring a
 
 ---
 
-## 📂 Repository Layout
+## Repository Layout
 
 - `Verifier Guided SD (4).ipynb` — main notebook with implementation, experiments, plots  
 - `benchmark_analysis.csv` — raw benchmark data used in the figures  
@@ -134,7 +134,7 @@ I focus on **how policies change acceptance and scheduling**, not on declaring a
 
 ---
 
-## ⚠️ Current Limitations (honest notes)
+## Current Limitations (honest notes)
 
 This is a **prototype** aimed at understanding policy design. A few intentional trade-offs and known gaps:
 
@@ -155,7 +155,7 @@ This is a **prototype** aimed at understanding policy design. A few intentional 
 
 ---
 
-## 🚀 How I Expect This to Improve (near-term roadmap)
+## How I Expect This to Improve (near-term roadmap)
 
 1. **Adaptive scheduling**  
    - Adjust draft length `k` and policy choice on the fly using uncertainty signals.  
@@ -177,7 +177,7 @@ This is a **prototype** aimed at understanding policy design. A few intentional 
    - Include latency-critical settings and streaming output.  
 
 ---
-## 🔬 Reproducing the Experiments
+## Reproducing the Experiments
 ```bash
 # 1) clone
 git clone https://github.com/adityakamat24/verifier-guided-sd.git
@@ -195,7 +195,7 @@ pip install torch torchvision torchaudio \
 jupyter notebook "Verifier Guided SD (4).ipynb"
 ```
 
-# ❓ FAQ
+# FAQ
 
 **Is the verifier a second big model?**  
 No. It’s a light policy layer (plus an optional tiny head) that ranks/filters drafts before we ask the target.
